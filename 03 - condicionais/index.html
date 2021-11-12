@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  </head>
+
+  <body>
+    <div id="lista">
+      <ul>
+        <li v-for="info in nomes">
+          <span>Sr.</span>
+          <span v-text="info.nome"></span>
+          <span>{{info.sobrenome}}</span>
+        </li>
+
+        <br />
+
+        <li v-for="info in nomes">
+          {{ info.nome+" "+info.sobrenome+" "+info.idade+" anos,"}}
+        </li>
+      </ul>
+    </div>
+
+    <!--------------------------------------------------------->
+    <!--TESTANDO IF -->
+
+    <h1 v-if="awesome">Vue é incrível</h1>
+    <h1 v-else>Oh não</h1>
+
+    <!--invólucro invisível-->
+    <template v-if="ok">
+      <h1>Título</h1>
+      <p>Paragrafo 1</p>
+      <p>Paragrafo 2</p>
+    </template>
+
+    <!--tem else =D -->
+    <div v-if="Math.random() > 0.5">Agora você me vê</div>
+    <div v-else>Agora você não me vê</div>
+
+    <br />
+    <!--testando-->
+    <div v-if=" type === 'A' ">A</div>
+    <div v-else-if=" type === 'B' ">B</div>
+    <div v-else-if=" type === 'C' ">C</div>
+    <div v-else>Não é A, B ou C</div>
+    <br />
+
+    <div>
+      <template v-if="loginType === 'username' ">
+        <label>Usuário</label>
+        <input placeholder="Informe nome de usuário." />
+      </template>
+      <template v-else>
+        <label>Email</label>
+        <input placeholder="Informe nome de endereço de Email." />
+      </template>
+    </div>
+    <!--------------------------------------------------------->
+    <script src="script.js"></script>
+  </body>
+</html>

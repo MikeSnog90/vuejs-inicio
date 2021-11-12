@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  </head>
+
+  <body>
+    <div id="app">
+      <span>{{n1}}</span>
+      <input type="text" v-model="n2" />
+      <span>{{ n1 + parseInt(n2) }}</span>
+    </div>
+
+    <br />
+
+    <div id="calc">
+      <label>Calculator</label><br />
+      <input type="text" v-model="num1" />
+      <input type="text" v-model="num2" />
+      <span>{{ parseInt(num1) + parseInt(num2) }}</span>
+    </div>
+
+    <
+
+    <script src="script.js"></script>
+  </body>
+</html>
