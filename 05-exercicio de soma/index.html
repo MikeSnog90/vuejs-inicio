@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  </head>
+
+  <body>
+    <div id="app">
+      <label v-for="text"> {{ n1 + " + " + n2 + " = " }} </label>
+      <input type="text" v-model="n3" placeholder="Digite o resultado" />
+
+      <!-- faltou o parseInt =/ -->
+      <div v-if="n1+n2 == parseInt(n3)">acerto</div>
+      <div v-if="n1+n3 != parseInt(n3) && n3 != '0' && n3 == ' ' ">erro</div>
+
+      <!-- só pra conferência {{n1+n2}} + {{n3}} -->
+    </div>
+
+    <!----------------------------------------->
+    <script src="script.js"></script>
+  </body>
+</html>
