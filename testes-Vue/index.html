@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>testes Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="msg" />
+      {{msg}}
+
+      <ul>
+        <li v-for="fruit in fruits">{{ fruit.name }}</li>
+      </ul>
+    </div>
+
+    <!------------------------------------------->
+    <script src="script.js"></script>
+  </body>
+</html>
