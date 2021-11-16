@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>teste Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="desafio">
+      <p>Usando VueJS - {{ nome }} ({{ idade }})</p>
+
+      <p>{{ idadePor3() }}</p>
+
+      <p>{{ numeroRodomico() }}</p>
+
+      <div>
+        <img height="100" :src="imagem" />
+      </div>
+
+      <div>
+        <input type="text" :value="nome" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
