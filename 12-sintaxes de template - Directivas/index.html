@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue js aula 11</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header"></header>
+
+      <section class="container">
+        <section class="container__content">
+          <div v-if="aviso">Este é um aviso</div>
+          <div v-bind:id="divid">Esta é uma div qualquer</div>
+          <a v-bind:href="link">Acessar</a>
+          <div v-bind:id="'item-'+ n">Div qualquer</div>
+          <button v-on:click="clicou">Clique em mim</button>
+
+          <!--modificadores de diretrivas-->
+          <form v-on:submit.prevent="enviou">
+            <input type="text" />
+            <input type="submit" value="enviar" />
+          </form>
+        </section>
+
+        <aside class="container__sidebar"></aside>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

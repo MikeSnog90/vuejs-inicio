@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue js aula 11</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header"></header>
+
+      <section class="container">
+        <section class="container__content">
+          <!-- ATALHOS V_BIND-->
+          <a v-bind:href="url"> Clique aqui</a><a> --|--</a>
+          <a :href="url"> clique atalho</a>
+          <!-- com : antes do evento é atalho de v-bind-->
+
+          <br /><br />
+          <!-- ATALHOS V_ON-->
+          <button v-on:click="fazalgo">clique em mim</button>
+          <button @click="fazalgo">clique em mim</button>
+          <!-- com @ antes do evento é atalho de v-on-->
+        </section>
+
+        <aside class="container__sidebar"></aside>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
