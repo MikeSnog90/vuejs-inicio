@@ -13,10 +13,10 @@
 
       <section class="container">
         <section class="container__content">
-          Digite um nome!:
-          <input v-model="inputName" />
+          Digite um nome:
+          <input v-model="nomeInput" /><span>{{ aviso }}</span>
 
-          <div id="app">
+          <div v-if="nomePronto">
             <button @click="add">Acicionar</button>
           </div>
         </section>
@@ -26,7 +26,7 @@
             <li v-for="item in lista">{{ item }}</li>
           </ul>
 
-          Total de nomes {{ lista.length }}
+          {{ totalTexto }}
         </aside>
       </section>
 
