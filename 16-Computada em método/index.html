@@ -13,12 +13,18 @@
 
       <section class="container">
         <section class="container__content">
-          {{ nome }}
-          <br />
-          {{ nomeInvertido }}
+          <div>{{ nome }}</div>
+
+          <div>{{ nomeInvertido() }}</div>
+          <div>{{ aleatorio }}</div>
+          <div>{{ aleatorioFuncao() }}</div>
         </section>
 
-        <aside class="container__sidebar"></aside>
+        <aside class="container__sidebar">
+          <div>{{ nomeInvertido() }}</div>
+          <div>{{ aleatorio }}</div>
+          <div>{{ aleatorioFuncao() }}</div>
+        </aside>
       </section>
 
       <footer class="footer"></footer>

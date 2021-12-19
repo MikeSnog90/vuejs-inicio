@@ -1,16 +1,11 @@
 let app = new Vue({
   el: "#app",
   data: {
-    nomeInput: "",
-    lista: [],
+    nome: "Bonieky",
   },
-  methods: {
-    add: function () {
-      if (this.nomeInput.length > 0) {
-        this.lista.push(this.nomeInput);
-
-        this.nomeInput = "";
-      }
+  computed: {
+    nomeInvertido: function () {
+      return this.nome.split("").reverse().join("");
     },
   },
 });

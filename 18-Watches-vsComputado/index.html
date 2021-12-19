@@ -13,12 +13,14 @@
 
       <section class="container">
         <section class="container__content">
-          {{ nome }}
+          Primeiro nome:
+          <input v-model="primeiroNome" />
           <br />
-          {{ nomeInvertido }}
+          Segundo nome:
+          <input v-model="segundoNome" />
         </section>
 
-        <aside class="container__sidebar"></aside>
+        <aside class="container__sidebar">{{ nomeCompleto }}</aside>
       </section>
 
       <footer class="footer"></footer>
